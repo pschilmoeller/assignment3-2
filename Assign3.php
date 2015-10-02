@@ -52,7 +52,7 @@
 				exit;
 			}
 				
-			$query = "select selected, category, month, day, name from events where month = '" . $_POST['btn_submit'] ."'";
+			$query = "select selected, category, month, day, name, url from events where month = '" . $_POST['btn_submit'] ."'";
 			$result = mysqli_query($db, $query);
 			
 				echo "<table id='center'>
@@ -67,10 +67,17 @@
 				     		<th class='colheaders'>Day</th>
 				     		<th class='colheaders'>Name</th>
 				     	</tr>";
-					
+						
+				$name = "";	
 				while($row = mysqli_fetch_assoc($result)) {
+					$url = $row["url"];
+					$name = $row["name"];
+					if ($url != NULL){
+						$name = "<a href=\"$url\" target=\"_blank\">$name</a>";
+					} else $name = $row["name"];
+					
 					echo "<tr><td>" . $row["selected"] . "</td><td>" . $row["category"] . "</td><td>" . $row["month"]
-				 	. "</td><td>" . $row["day"] . "</td><td>" . $row["name"] . "</td></tr>"; 
+				 	. "</td><td>" . $row["day"] . "</td><td>" . $name . "</td></tr>"; 
 				}
 				
 				echo "</table>";
