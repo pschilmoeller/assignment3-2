@@ -96,7 +96,29 @@ input:hover {
 	background-color:#e5e5e5; 
 }.CSSTableGenerator tr:nth-child(even){ 
 	background-color:#ffffff; 
-}.CSSTableGenerator td{
+}.CSSTableGenerator th#mainTH{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:7px;
+	font-size:16px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+.CSSTableGenerator th{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:16px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+.CSSTableGenerator td{
 	vertical-align:middle;
 	border:1px solid #000000;
 	border-width:0px 1px 1px 0px;

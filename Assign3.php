@@ -57,7 +57,7 @@
 			
 				echo "<table id='center'>
 			    		<tr>
-			     			<th colspan=\"5\">Today's date is: " . date('l jS \of F Y') . "</th>
+			     			<th colspan=\"5\" id=\"mainTH\">Today's date is: " . date('l jS \of F Y') . "</th>
 			     		</tr>
 			     	
 				     	<tr>
