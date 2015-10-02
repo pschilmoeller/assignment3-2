@@ -73,7 +73,7 @@
 					$url = $row["url"];
 					$name = $row["name"];
 					if ($url != NULL){
-						$name = "<a href=\"$url\">$name</a>";
+						$name = "<a href=\"$url\" target=\"_blank\">$name</a>";
 					} else $name = $row["name"];
 					
 					echo "<tr><td>" . $row["selected"] . "</td><td>" . $row["category"] . "</td><td>" . $row["month"]
