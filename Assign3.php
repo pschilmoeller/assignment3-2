@@ -17,27 +17,28 @@
 	
 	<h2>"Welcome to Celebrate Everyday!"</h2>
 	
-	     <div id="buttons">
-		   
+	     <div class="buttons">
+		 
 		    <form action="Assign3.php" method ="post">
 			
-	        <input type="submit" name="btn_submit" value="January"><br>
-			<input type="submit" name="btn_submit" value="February"><br>
-			<input type="submit" name="btn_submit" value="March"><br>
-			<input type="submit" name="btn_submit" value="April"><br>
-			<input type="submit" name="btn_submit" value="May"><br>
-			<input type="submit" name="btn_submit" value="June"><br>
-			<input type="submit" name="btn_submit" value="July"><br>
-			<input type="submit" name="btn_submit" value="August"><br>
-			<input type="submit" name="btn_submit" value="September"><br>
-			<input type="submit" name="btn_submit" value="October"><br>
-			<input type="submit" name="btn_submit" value="November"><br>
-			<input type="submit" name="btn_submit" value="December"><br>
+	        <input type="submit" name="btn_submit" value="January">
+			<input type="submit" name="btn_submit" value="February">
+			<input type="submit" name="btn_submit" value="March">
+			<input type="submit" name="btn_submit" value="April">
+			<input type="submit" name="btn_submit" value="May">
+			<input type="submit" name="btn_submit" value="June"><br />
+			<input type="submit" name="btn_submit" value="July">
+			<input type="submit" name="btn_submit" value="August">
+			<input type="submit" name="btn_submit" value="September">
+			<input type="submit" name="btn_submit" value="October">
+			<input type="submit" name="btn_submit" value="November">
+			<input type="submit" name="btn_submit" value="December">
 
 	        </form>
-	    
+	        
 	     </div>
-	     <div>
+	     
+	     	 <div class="CSSTableGenerator"> 
 	     <?php
 	     
 	     	date_default_timezone_set('America/Chicago');
@@ -81,7 +82,6 @@
 			     }
 	     ?>    
 	     </div>
-	
 </body>
 
 </html>
