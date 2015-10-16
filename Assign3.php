@@ -45,14 +45,14 @@
 	     
 			if(isset($_POST['btn_submit'])) {
 			     
-			@ $db = mysqli_connect('localhost', 'user1', 'abc123', 'events');
+			@ $db = mysqli_connect('localhost', 'ics325fa1528', '983278', 'ics325fa1528');
 			
 			if(mysqli_connect_errno() ) {
 				echo "Error: could not connect to database. Please try again later.";
 				exit;
 			}
 				
-			$query = "select selected, category, month, day, name, url from events where month = '" . $_POST['btn_submit'] ."'";
+			$query = "select selected, category, month, day, name, url from Events where month = '" . $_POST['btn_submit'] ."'";
 			$result = mysqli_query($db, $query);
 			
 				echo "<table id='center'>
@@ -72,7 +72,7 @@
 				while($row = mysqli_fetch_assoc($result)) {
 					$url = $row["url"];
 					$name = $row["name"];
-					if ($url != NULL){
+					if ($url !== NULL){
 						$name = "<a href=\"$url\" target=\"_blank\">$name</a>";
 					} else $name = $row["name"];
 					
